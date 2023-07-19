@@ -1,2 +1,2 @@
-# aurora
+# nyx
 nothing (yet)
