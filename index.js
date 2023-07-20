@@ -23,7 +23,7 @@ function sendMessage() {
     text: query,
     key: '178a0827-6a3f-41a9-b3a3-c22e01ef0cf6',
     user_id: userId,
-    speak: false
+    speak: true
   };
 
   fetch('https://api.carterlabs.ai/chat', {
