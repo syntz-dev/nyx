@@ -83,7 +83,11 @@ function sendMessage() {
 
       // Show the input field with a fade-in animation
       inputField.style.animation = "fadeIn 0.5s ease forwards";
+      inputField.style.width = "240px";
+      inputField.style.height = "29px";
+
       inputField.disabled = false;
+      inputField.focus();
 
       // Hide the loading container with a fade-out animation
       loadingContainer.style.animation = "fadeOut 0.5s ease forwards";
@@ -92,11 +96,14 @@ function sendMessage() {
       console.error("Error:", error);
 
       // Hide the loading spinner and show the input field again
+
+
     });
 
   // Clear the input field
   inputField.value = "";
 }
+
 
 // Function to get the value of a cookie
 function getCookie(name) {
